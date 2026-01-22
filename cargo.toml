@@ -1,0 +1,19 @@
+[package]
+name = "solana-raffle"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[[bin]]
+name = "client"
+path = "src/client.rs"  # Optional: For future CLI (not included here)
+
+[dependencies]
+anchor-lang = "0.34.0"
+solana-sdk = { version = "1.22", default-features = false }
+borsh = "0.9"
+
+[dev-dependencies]
+anchor-lang-test = "0.34.0"
