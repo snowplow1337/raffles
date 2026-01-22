@@ -1,0 +1,5 @@
+/target/
+/dist/
+*.key
+.env
+build.sh
